@@ -5,7 +5,9 @@ player1_name = localStorage.getItem("player1_name", player1_name);
 player2_name = localStorage.getItem("player2_name", player2_name);
 
 question_turn = "player1";
+document.getElementById("player_question").innerHTML = player1_name;
 answer_turn = "player2";
+document.getElementById("player_answer").innerHTML = player2_name;
 
 function send(){
     number1 = document.getElementById("number1").value;
